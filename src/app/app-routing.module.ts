@@ -14,6 +14,14 @@ const routes: Routes = [
   {
     path: 'instalacao',
     loadChildren: () => import('./instalacao/instalacao.module').then( m => m.InstalacaoPageModule)
+  },
+  {
+    path: 'layout',
+    loadChildren: () => import('./layout/layout.module').then( m => m.LayoutPageModule)
+  },
+  {
+    path: 'layout-header-footer',
+    loadChildren: () => import('./layout-header-footer/layout-header-footer.module').then( m => m.LayoutHeaderFooterPageModule)
   }
 ];
 
