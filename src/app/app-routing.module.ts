@@ -46,6 +46,10 @@ const routes: Routes = [
   {
     path: 'comp-action-sheet',
     loadChildren: () => import('./comp-action-sheet/comp-action-sheet.module').then( m => m.CompActionSheetPageModule)
+  },
+  {
+    path: 'comp-alert',
+    loadChildren: () => import('./comp-alert/comp-alert.module').then( m => m.CompAlertPageModule)
   }
 ];
 
