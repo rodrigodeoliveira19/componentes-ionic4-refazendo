@@ -42,6 +42,10 @@ const routes: Routes = [
   {
     path: 'layout-input',
     loadChildren: () => import('./layout-input/layout-input.module').then( m => m.LayoutInputPageModule)
+  },
+  {
+    path: 'comp-action-sheet',
+    loadChildren: () => import('./comp-action-sheet/comp-action-sheet.module').then( m => m.CompActionSheetPageModule)
   }
 ];
 
