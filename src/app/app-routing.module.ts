@@ -54,6 +54,10 @@ const routes: Routes = [
   {
     path: 'comp-badge',
     loadChildren: () => import('./comp-badge/comp-badge.module').then( m => m.CompBadgePageModule)
+  },
+  {
+    path: 'buttons',
+    loadChildren: () => import('./buttons/buttons.module').then( m => m.ButtonsPageModule)
   }
 ];
 
