@@ -34,6 +34,14 @@ const routes: Routes = [
   {
     path: 'tab2',
     loadChildren: () => import('./tab2/tab2.module').then( m => m.Tab2PageModule)
+  },
+  {
+    path: 'componentes',
+    loadChildren: () => import('./componentes/componentes.module').then( m => m.ComponentesPageModule)
+  },
+  {
+    path: 'layout-input',
+    loadChildren: () => import('./layout-input/layout-input.module').then( m => m.LayoutInputPageModule)
   }
 ];
 
