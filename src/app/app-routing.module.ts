@@ -50,6 +50,10 @@ const routes: Routes = [
   {
     path: 'comp-alert',
     loadChildren: () => import('./comp-alert/comp-alert.module').then( m => m.CompAlertPageModule)
+  },
+  {
+    path: 'comp-badge',
+    loadChildren: () => import('./comp-badge/comp-badge.module').then( m => m.CompBadgePageModule)
   }
 ];
 
