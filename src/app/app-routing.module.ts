@@ -58,6 +58,10 @@ const routes: Routes = [
   {
     path: 'buttons',
     loadChildren: () => import('./buttons/buttons.module').then( m => m.ButtonsPageModule)
+  },
+  {
+    path: 'app-todoconahack',
+    loadChildren: () => import('./app-todoconahack/app-todoconahack.module').then( m => m.AppTodoconahackPageModule)
   }
 ];
 
