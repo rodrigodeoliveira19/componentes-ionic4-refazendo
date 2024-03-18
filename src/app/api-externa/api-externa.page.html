@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Api Externa</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <ion-button expand="full" (click)="get()">Get</ion-button>
+  <ion-button expand="full" (click)="post()">Post</ion-button>
+  <ion-button expand="full" (click)="put()">Put</ion-button>
+  <ion-button expand="full" (click)="delete()">Delete</ion-button>
+
+  <h4>Resposta do servidor</h4>
+  {{resultado}}
+</ion-content>

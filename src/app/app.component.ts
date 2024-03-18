@@ -10,6 +10,7 @@ export class AppComponent {
     { title: 'Layout', url: '/layout', icon: 'mail' },
     { title: 'Componentes', url: '/componentes', icon: 'mail' },
     { title: 'App Todoconahack', url: '/app-todoconahack', icon: 'paper-plane' },
+    { title: 'Api Externa', url: '/api-externa', icon: 'paper-plane' },
     { title: 'Favorites', url: '/folder/favorites', icon: 'heart' },
     { title: 'Archived', url: '/folder/archived', icon: 'archive' },
     { title: 'Trash', url: '/folder/trash', icon: 'trash' },

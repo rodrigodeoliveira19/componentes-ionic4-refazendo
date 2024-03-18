@@ -62,6 +62,10 @@ const routes: Routes = [
   {
     path: 'app-todoconahack',
     loadChildren: () => import('./app-todoconahack/app-todoconahack.module').then( m => m.AppTodoconahackPageModule)
+  },
+  {
+    path: 'api-externa',
+    loadChildren: () => import('./api-externa/api-externa.module').then( m => m.ApiExternaPageModule)
   }
 ];
 

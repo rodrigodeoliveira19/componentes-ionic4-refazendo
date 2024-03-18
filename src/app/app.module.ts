@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { Drivers, Storage } from '@ionic/storage';
 import { IonicStorageModule } from '@ionic/storage-angular';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,10 +17,11 @@ import { IonicStorageModule } from '@ionic/storage-angular';
     IonicStorageModule.forRoot({
       name: '__mydb',
      driverOrder: [Drivers.IndexedDB, Drivers.LocalStorage]
-    })
+    }), 
+    HttpClientModule
 
   ],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
+  providers: [HttpClientModule,{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
