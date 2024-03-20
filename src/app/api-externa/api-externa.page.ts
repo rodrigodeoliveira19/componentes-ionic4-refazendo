@@ -8,7 +8,10 @@ import { UsuarioServiceService } from '../usuario-service.service';
 })
 export class ApiExternaPage implements OnInit {
 
-  resultado: any
+  resultadoGet: any
+  resultadoPost: any
+  resultadoPut: any
+  resultadoDelete: any
 
   constructor(private usuarioServiceService: UsuarioServiceService) { }
 
@@ -17,20 +20,26 @@ export class ApiExternaPage implements OnInit {
 
   get() {
     this.usuarioServiceService.get().subscribe((data: any) => {
-      this.resultado = JSON.stringify(data)
+      this.resultadoGet = JSON.stringify(data)
     });
   }
 
   post() {
-    alert("post")
+    this.usuarioServiceService.post().subscribe((data: any) => {
+      this.resultadoPost = JSON.stringify(data)
+    });
   }
 
   put() {
-    alert("put")
+    this.usuarioServiceService.put().subscribe((data: any) => {
+      this.resultadoPut = JSON.stringify(data)
+    });
   }
 
   delete() {
-    alert("delete")
+    this.usuarioServiceService.delete().subscribe((data: any) => {
+      this.resultadoDelete = JSON.stringify(data)
+    });
   }
 
 }
