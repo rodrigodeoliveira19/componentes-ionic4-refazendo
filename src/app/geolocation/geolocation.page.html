@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Geolocation</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <ion-button expand="full" (click)="printCurrentPosition()">printCurrentPosition</ion-button>
+  <ion-button expand="full" (click)="watchPosition()">watchPosition</ion-button>
+  
+  <h4>Resposta do servidor</h4>
+  <h6>printCurrentPosition</h6>{{resultado}}
+  <h6>watchPosition</h6>{{resultado}}
+</ion-content>

@@ -66,6 +66,10 @@ const routes: Routes = [
   {
     path: 'api-externa',
     loadChildren: () => import('./api-externa/api-externa.module').then( m => m.ApiExternaPageModule)
+  },
+  {
+    path: 'geolocation',
+    loadChildren: () => import('./geolocation/geolocation.module').then( m => m.GeolocationPageModule)
   }
 ];
 
